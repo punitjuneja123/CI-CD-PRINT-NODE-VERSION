@@ -1,1 +1,10 @@
 #CI CD PRINT NODE VERSION
+name: print node version
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: print node version
+      - run: node --version
